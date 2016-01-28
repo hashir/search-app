@@ -1,0 +1,7 @@
+<ul id="country-list">
+    {% for key,value in results %}
+        <li onClick="selectCountry('{{ key }}')">{{ value ~'('~key~')' }}</li>
+    {% else %}
+        <li onClick="selectCountry('No result')">N/A</li>
+    {% endfor %}
+</ul>
